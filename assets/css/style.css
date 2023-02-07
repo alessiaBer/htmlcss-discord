@@ -6,30 +6,26 @@
 }
 
 :root {
-    --nav-bg: #add8e6;
-    --nav-cont: #daa520;
-    --banner-bg: #00008b;
-    --banner-cont: #ee82ee;
-    --section-img: #1e90ff;
-    --section-text: #ffc0cb;
-    --section-bg: #d3d3d3;
-    --main-footer-cont: #228b22;
-    --footer-social: #f08080;
-    --footer-col: #20b2aa;
-    --footer-bg: #23272a;
-    --footer-bottom: #7fffd4;
-    --footer-btn: #ffb6c1;
+    --nav-bg: #3161e0;
+    --dark-grey: #23272a;
+    --white: #fff;
+    --mac-download: #8ea1e1;
+    --footer-titles: #6f85d3;
+}
+
+body {
+    font-family: Whitney, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 /* #endregion Common
 
 /* #region Utilities */
 .container {
-    width: 60%;
+    width: 70%;
 }
 
 .p-1 {
-padding: 0.5rem;
+    padding: 0.5rem;
 }
 
 .dash-b {
@@ -47,21 +43,31 @@ padding: 0.5rem;
     display: flex;
     justify-content: center;
     background-color: var(--nav-bg);
+    font-weight: 500;
 }
 
 #app_header .container {
     background-color: var(--nav-cont);
     display: flex;
     justify-content: space-between;
-    margin: 0.7rem;
+    margin: 1.2rem 0 0.7rem 0;
 }
 
 .logo {
-    width: 20%;
+    width: 15%;
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 90%;
 }
 
 nav {
-    width: 60%;
+    width: 75%;
+    color: var(--white);
+    display: flex;
+    align-items: center;
 }
 
 nav ul {
@@ -72,13 +78,27 @@ nav ul {
 }
 
 .nav-list li {
-    padding: 0 0.5rem
+    padding: 0 1rem;
+    font-size: 1rem;
 }
 
 .login {
-    width: 20%;
+    width: 10%;
     display: flex;
     justify-content: flex-end;
+    align-items: center;
+    font-weight: 500;
+}
+
+.login button {
+    background-color: var(--white);
+    color: var(--dark-grey);
+    border: none;
+    border-radius: 1rem;
+    padding: 0.5rem 1.2rem;
+    height: 100%;
+    font-size: 0.9rem;
+    font-weight: 400;
 }
 
 /* #endregion app_header */
