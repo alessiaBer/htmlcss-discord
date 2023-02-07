@@ -244,6 +244,14 @@ h2 {
     width: 40%;
 }
 
+.footer-btn {
+    background-color: var(--mac-download);
+    color: var(--white);
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 1rem;
+}
+
 
 
 /* #endregion Main */
@@ -252,7 +260,8 @@ h2 {
 #app_footer {
     display: flex;
     justify-content: center;
-    background-color: var(--footer-bg);
+    background-color: var(--dark-grey);
+    padding: 3rem 0;
 }
 
 #footer-top {
@@ -263,9 +272,15 @@ h2 {
 }
 
 #footer-top #talk {
-    background-color: var(--footer-social);
     width: 30%;
     height: 100%;
+}
+
+#talk h3 {
+    color: var(--footer-titles);
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
 }
 
 #footer-top .columns {
@@ -289,8 +304,17 @@ h2 {
     align-items: center;
 }
 
-.footer-btn {
-    background-color: var(--footer-btn);
-    padding: 0 0.5rem;
+.language {
+    color: var(--white);
+    font-size: 0.8rem;
+}
+
+.columns h4 {
+    color: var(--footer-titles);
+}
+
+.columns ul {
+    list-style: none;
+    color: var(--white);
 }
 /* #endregion Footer */
