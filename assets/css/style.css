@@ -319,6 +319,17 @@ h2 {
     width: calc(100%/4);
 }
 
+.social {
+    display: block;
+    margin-top: 1.2rem;
+    color: white;
+}
+
+.fa-brands {
+    padding-right: 1.2rem;
+    font-size: 1.2rem;
+}
+
 #footer-bottom {
     height: 60px;
     width: 100%;
@@ -332,6 +343,11 @@ h2 {
 .language {
     color: var(--white);
     font-size: 0.8rem;
+}
+
+
+img .flag {
+    width: 0.8rem !important;
 }
 
 .columns h4 {
