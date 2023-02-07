@@ -11,6 +11,7 @@
     --white: #fff;
     --mac-download: #8ea1e1;
     --footer-titles: #6f85d3;
+    --section-bg: #f6f6f6;
 }
 
 body {
@@ -111,26 +112,18 @@ nav ul {
     margin: 0 auto;
 }
 
+/* #region jumbotron */
 .jumbotron {
-    background-color: var(--banner-bg);
+    background-image: url('./assets/img/jumbo.png');
     width: 100%;
     display: flex;
     justify-content: center;
-}
-
-.jumbotron img {
-    width: 100%;
-    position: relative;
+    align-items: center;
 }
 
 .jumbotron-container {
-    background-color: var(--banner-cont);
     width: 45%;
     padding: 0 1rem 0 1rem;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
 }
 
 .jumbotron-container h1 {
@@ -170,12 +163,12 @@ nav ul {
     background-color: var(--dark-grey);
     color: var(--white);
 }
+/* #endregion jumbotron */
 
 main .main-section {
     width: 100%;
     display: flex;
     justify-content: center;
-    height: 400px;
 }
 
 section .container {
@@ -185,27 +178,41 @@ section .container {
 
 .section-img {
     background-color: var(--section-img); 
-    height: 100%;
-    width: 60%;
+    width: 70%;
+}
+
+.section-img img {
+    width: 90%;
 }
  
 .section-text {
      background-color: var(--section-text);
      height: 100%;
-     width: 40%;
+     width: 30%;
+     color: var(--dark-grey);
 }
 
-#reliable .container {
-    background-color: var(--main-footer-cont);
-    height: 650px;
-    display: flex;
-    justify-content: center;
-    margin: 2.5rem auto;
+.section-text h2 {
+    font-size: 2rem;
+}
+
+#safe-talk .section-text, #fandom .section-text {
+    padding-left: 1rem;
 }
 
 #easy-meeting, #reliable {
     background-color: var(--section-bg);
 }
+
+#reliable .container {
+    background-color: var(--main-footer-cont);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 2.5rem auto;
+}
+
+
 /* #endregion Main */
 
 /* #region Footer */
