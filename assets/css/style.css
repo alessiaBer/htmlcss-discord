@@ -114,7 +114,7 @@ nav ul {
 
 /* #region jumbotron */
 .jumbotron {
-    background-image: url('./assets/img/jumbo.png');
+    background-image: url('../img/jumbo.png');
     width: 100%;
     display: flex;
     justify-content: center;
@@ -174,12 +174,20 @@ main .main-section {
 section .container {
     margin: 2.5rem 0;
     display: flex;
+
+    color: var(--dark-grey);
 }
 
 .section-img {
     background-color: var(--section-img); 
     width: 70%;
 }
+
+#easy-meeting .section-img {
+    display: flex;
+    justify-content: flex-end;
+}
+
 
 .section-img img {
     width: 90%;
@@ -189,15 +197,24 @@ section .container {
      background-color: var(--section-text);
      height: 100%;
      width: 30%;
-     color: var(--dark-grey);
 }
 
-.section-text h2 {
-    font-size: 2rem;
+h2 {
+    font-size: 2.3rem;
+    margin: 2rem 0 2rem 0;
+}
+
+.section-text p {
+    line-height: 1.5rem;
+    font-size: 1rem;
+}
+
+#easy-meeting {
+    justify-items: end;
 }
 
 #safe-talk .section-text, #fandom .section-text {
-    padding-left: 1rem;
+    padding-left: 1.5rem;
 }
 
 #easy-meeting, #reliable {
@@ -211,6 +228,19 @@ section .container {
     justify-content: center;
     margin: 2.5rem auto;
 }
+
+#reliable h2, #reliable p {
+    text-align: center;
+}
+
+#reliable p {
+    padding: 0 6rem;
+}
+
+#reliable h3 {
+    width: 40%;
+}
+
 
 
 /* #endregion Main */
