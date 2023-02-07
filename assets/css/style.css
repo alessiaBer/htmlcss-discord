@@ -6,7 +6,7 @@
 }
 
 :root {
-    --nav-bg: #3161e0;
+    --nav-bg: #255ee9;
     --dark-grey: #23272a;
     --white: #fff;
     --mac-download: #8ea1e1;
@@ -118,11 +118,57 @@ nav ul {
     justify-content: center;
 }
 
+.jumbotron img {
+    width: 100%;
+    position: relative;
+}
+
 .jumbotron-container {
     background-color: var(--banner-cont);
     width: 45%;
-    height: 300px;
-    margin: 2.5rem 0;
+    padding: 0 1rem 0 1rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.jumbotron-container h1 {
+    color: var(--white);
+    padding-bottom: 2rem;
+    text-align: center;
+}
+
+.jumbotron-container p {
+    color: var(--white);
+    text-align: center;
+    line-height: 2rem;
+    font-size: 1rem;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+
+}
+
+.btn-container button {
+    border: none;
+    border-radius: 1.5rem;
+    padding: 1rem 1.5rem;
+    font-size: 1rem;
+    margin: 0 0.5rem;
+}
+
+#download-w {
+    background-color: var(--white);
+    color: var(--dark-grey);
+}
+
+#open-discord {
+    background-color: var(--dark-grey);
+    color: var(--white);
 }
 
 main .main-section {
