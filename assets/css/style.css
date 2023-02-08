@@ -343,11 +343,7 @@ h2 {
 .language {
     color: var(--white);
     font-size: 0.8rem;
-}
-
-
-img .flag {
-    width: 0.8rem !important;
+    height: 4rem;
 }
 
 .columns h4 {
