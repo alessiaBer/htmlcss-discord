@@ -280,6 +280,17 @@ h2 {
     margin-top: 2.5rem;
 }
 
+.wave-top {
+    color: var(--section-bg);
+    margin-bottom: -5px;
+}
+
+.wave-bottom {
+    color: var(--section-bg);
+    transform: rotate(180deg);
+    margin-top: -5px;
+}
+
 /* #endregion Main */
 
 /* #region Footer */
