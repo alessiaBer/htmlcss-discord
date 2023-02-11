@@ -41,17 +41,21 @@ body {
 
 /* #region app_header */
 #app_header {
-    display: flex;
-    justify-content: center;
     background-color: var(--nav-bg);
     font-weight: 500;
-}
+    width: 100%;
+} 
 
 #app_header .container {
     background-color: var(--nav-cont);
     display: flex;
     justify-content: space-between;
-    margin: 1.2rem 0 0.7rem 0;
+    margin: 0 auto 0.7rem auto;
+    padding-top: 1rem;
+    display: flex;
+    justify-content: center;
+    background-color: var(--nav-bg);
+    font-weight: 500;
 }
 
 .logo {
